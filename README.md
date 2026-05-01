@@ -72,7 +72,7 @@ python gui_integrated_output.py
 ## Build EXE
 
 ```
-build_integrated_output_gui_spec_playwright_bundled.bat
+build.bat
 ```
 
 ---
