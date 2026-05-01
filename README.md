@@ -1,71 +1,34 @@
 ![Banner](banner.svg)
 
-# TikTok Archive Builder (GUI)
+# TikTok Archive Builder
 
-A local tool to download TikTok content and build an offline archive you can browse in your browser.
-
----
+A Windows GUI tool for saving TikTok profiles into a local offline archive you can browse in your browser.
 
 ## What It Does
 
-* Downloads TikTok videos
-* Saves metadata and thumbnails
-* Scrapes comments (including images and stickers)
-* Supports slideshow/photo posts
-* Tracks deleted videos
-* Builds a full offline HTML archive
-
----
+TikTok Archive Builder downloads profile posts, saves metadata and thumbnails, imports comments, handles slideshow posts, and builds a searchable local HTML archive.
 
 ## Features
 
-### Archiving
-
-* Download videos with yt-dlp
-* Save metadata and thumbnails
-
-### Comments
-
-* Scrapes all comments, including images and stickers
-* Merges and deduplicates data
-
-### Slideshows
-
-* Detects and downloads all images from photo posts
-* Filters out unrelated images
-
-### Tracking
-
-* Tracks deleted videos
-* Avoids re-downloading existing files
-
----
+- Download TikTok videos with `yt-dlp`
+- Save thumbnails and metadata
+- Import comments, replies, stickers, and comment images
+- Support slideshow/photo posts
+- Avoid re-downloading files you already have
+- Track deleted or unavailable videos
+- Build a local offline `index.html` archive
 
 ## HTML Archive
 
-The tool builds a **local .html archive** to view everything.
+The generated archive lets you:
 
-### What You Can Do
-
-* Play videos
-* View comments and replies
-* See comment images
-* View slideshow posts as galleries
-
-### Features
-
-* Filter:
-
-  * Videos
-  * Slideshows
-  * Posts with images
-* Sort:
-
-  * Newest / Oldest
-* Toggle comments and replies
-* Works fully offline
-
----
+- Play downloaded videos
+- View slideshow posts as image galleries
+- Read comments and replies
+- View comment images and stickers
+- Filter posts by video, slideshow, or image posts
+- Sort posts by newest or oldest
+- Toggle comments on and off
 
 ## Screenshots
 
@@ -73,11 +36,9 @@ The tool builds a **local .html archive** to view everything.
 
 ![GUI](screenshot_gui.png)
 
----
-
 ## Project Structure
 
-```
+```text
 output/
   username/
     links.txt
@@ -90,7 +51,6 @@ output/
       comment_images/
       slideshows/
 ```
-
 ---
 
 ## How to Use
